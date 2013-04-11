@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<title>Bootstrap Modal Drawer</title>
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.modaldrawer.css">
 	<style type="text/css">
 		body {
 			background: #F9F9F9;
@@ -22,12 +23,28 @@
 			<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
 			<h3 id="modalLabel">Drawer Modal</h3>
 		</div>
+		<div class="modal-drawer">
+			<div class="modal-drawer-header">
+				<h4>Options</h4>
+			</div>
+			<div class="modal-drawer-body">
+				<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+			</div>
+			<div class="modal-drawer-footer">
+				<button class="btn">Close</button>
+			</div>
+		</div>
 		<div class="modal-body">
 			<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
 		</div>
 		<div class="modal-footer">
-			<button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
-			<button class="btn btn-primary">Save changes</button>
+			<div class="pull-left">
+				<button class="btn btn-info">Options</button>
+			</div>
+			<div class="pull-right">
+				<button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+				<button class="btn btn-primary">Save changes</button>
+			</div>
 		</div>
 	</div>
 	<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
